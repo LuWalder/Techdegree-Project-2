@@ -4,34 +4,36 @@
     <title>Luis Walderdorff's Profile</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <div class="main-nav">
-        <ul class="nav">
-          <li class="name">Luis Walderdorff</li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+    <div class="grey-background">
+      <div class="main-nav">
+          <ul class="nav">
+            <li class="name" id="name">Luis Walderdorff</li>
+            <li><a href="#name" class="not-name">Home</a></li>
+            <li><a href="#portfolio" class="not-name">Portfolio</a></li>
+            <li><a href="#contact" class="not-name">Contact</a></li>
+          </ul>
+      </div>
+
+      <header class="main-header">
+        <img src="images/responsive-layout-profile.png" alt="My profile picture." class="profile-image"/>
+        <p>
+          Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!
+        </p>
+      </header>
     </div>
 
-    <header class="main-header">
-      <img src="images/responsive-layout-profile.png" alt="My profile picture." class="profile-image"/>
-      <p>
-        Hi! I'm a front-end developer who loves responsive desgin and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!
-      </p>
-    </header>
 
     <main class="main-content">
       <div class="portfolio">
-        <h2>Portfolio</h2>
+        <h3 id="portfolio">Portfolio</h3>
       </div>
 
       <div class="marketing-page">
         <img  src="images/portfolio-1.png" alt="The front page of a marketing website." class="main-images"/>
-        <h3>Marketing Page</h3>
+        <h2>Marketing Page</h2>
         <p>
           This project shows the front page of a marketing website meant for a specific business I'm interested in.
         </p>
@@ -39,7 +41,7 @@
 
       <div class="search-age">
         <img  src="images/portfolio-2.png" alt="My search project." class="main-images"/>
-        <h3>Search Page</h3>
+        <h2>Search Page</h2>
         <p>
           This project searches through a specific database to find information that the user is trying to look up.
         </p>
@@ -80,15 +82,16 @@
     </main>
 
     <footer class="main-footer">
-        <h2>Contact</h2>
+        <h2 id="contact">Contact</h2>
         <p>
           If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!
         </p>
-        <p>Phone   +1 (111) 555-1234</p>
-        <p>Email   email@yoursite.com</p>
-        <p>Luis Walderdorff</p>
-        <p>BACK TO TOP</p>
-        <p></p>
+        <p><b>Phone</b>   +1 (111) 555-1234</p>
+        <p><b>Email</b>   email@yoursite.com</p>
+        <div class="bottom-footer">
+          <p id="LW"><b>Luis Walderdorff</b></p>
+          <p id="btt"><b><a href="#name">BACK TO TOP</a></b></p>
+        </div>
     </footer>
   </body>
 </html>
