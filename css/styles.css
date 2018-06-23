@@ -1,3 +1,4 @@
+/* Global Layout Set-up */
 
 body {
   text-align: center;
@@ -6,18 +7,27 @@ body {
   padding: 0;
 }
 
-p {
-
+* {
+  box-sizing: border-box;
 }
+
+/* Link Styles */
 
 a {
   text-decoration: none;
   color: grey;
 }
 
-* {
-  box-sizing: border-box;
+a:hover {
+  background-color: lightgrey;
 }
+
+/* Section Styles */
+
+nav {
+  list-style-type: none;
+  font-weight: bolder;
+ }
 
 img {
    width: 90%;
@@ -36,19 +46,14 @@ ul .main-nav{
 
 .grey-background {
   background: rgba(0, 0, 0, 0.02);
+  margin-top: -15px;
  }
-
-.nav {
-  list-style-type: none;
-  font-weight: bolder;
- }
-
 
 .name {
    font-size: 30px;
    margin-bottom: 15px;
    padding-top: 10px;
-
+   font-weight: bold;
  }
 
 .not-name {
@@ -101,15 +106,164 @@ ul .main-nav{
   padding-top: 5px;
 }
 
+.upper-footer {
+  margin-bottom: 40px;
+}
+
+.second-nav {
+  display: none;
+}
+
 #btt{
   text-align: right;
-  display: inline-block;
-  margin-left: 30px;
+  display: inline;
   color: black;
+  vertical-align: top;
+  float: right;
+  padding-right: 5%;
 }
 
 #LW {
   text-align: left;
-  display: inline-block;
-  margin-right: 30px;
+  float: left;
+  padding-left: 5%;
+  color: black;
+}
+
+#future-projects {
+  border: 1px solid lightgrey;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Styles for larger screens */
+
+@media (min-width: 768px) {
+
+
+  #LW {
+    padding-top: 20px;
+  }
+
+  #btt {
+  display: none;
+ }
+
+  .profile-image,
+  .main-header p {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 18px;
+    padding: 2.5%;
+  }
+
+  .profile-image {
+    width: 45%;
+    float: right;
+    padding-right: 5%;
+  }
+
+  .main-header p {
+    text-align: left;
+    width: 55%;
+  }
+
+  .main-content {
+    clear: both;
+  }
+
+  ul li{
+    display: inline-block;
+  }
+
+  .name {
+    display: block;
+    padding-top: 25px;
+  }
+
+  .marketing-page,
+  .travel-app,
+  .photo-gallery,
+  .search-age,
+  .favorite-spots,
+  .calculator {
+    display: inline-block;
+    width: 45%;
+    padding-bottom: 20px;
+    vertical-align: top;
+  }
+
+  .not-name {
+    display: inline;
+    width: 20%;
+    background: inherit;
+  }
+
+  .second-nav {
+    display: inline-block;
+    float: right;
+    padding-top: 14px;
+    padding-right: 10px;
+  }
+
+
+}
+
+@media (min-width: 1024px) {
+
+
+   nav {
+      display: inline-block;
+      float: right;
+    }
+
+   ul {
+      display: inline-block;
+    }
+
+  .marketing-page,
+  .travel-app,
+  .photo-gallery,
+  .search-age,
+  .favorite-spots,
+  .calculator {
+    width: 30%;
+  }
+
+  .main-header p {
+    padding-bottom: 105px;
+    clear: both;
+
+}
+  .name {
+    display: inline-block;
+    text-align: left;
+    float: left;
+    padding-top: 10px;
+    padding-left: 30px;
+  }
+
+  .not-name {
+    display: inline-block;
+    text-align: right;
+  }
+
+  nav {
+    float: right;
+    overflow: hidden;
+    width: 50%;
+  }
+
+  .grey-background {
+    padding-bottom: 120px;
+  }
+
+  .second-nav {
+    padding-top: 0;
+  }
 }
